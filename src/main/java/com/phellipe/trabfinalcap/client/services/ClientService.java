@@ -4,13 +4,12 @@ import com.phellipe.trabfinalcap.client.dto.ClientDTO;
 import com.phellipe.trabfinalcap.client.entities.Client;
 import com.phellipe.trabfinalcap.client.repositories.ClientRepository;
 import com.phellipe.trabfinalcap.client.services.exceptions.ResourceNotFoundException;
-import jdk.jfr.Category;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.bind.annotation.ExceptionHandler;
 
 import javax.persistence.EntityNotFoundException;
 import java.util.Optional;
@@ -54,6 +53,14 @@ public class ClientService {
         }
     }
 
+    public void delete(Long id) {
+        try{
+            repository.deleteById(id);
+        }catch (EmptyResultDataAccessException ex){
+            throw new ResourceNotFoundException("Id not found " + id);
+        }
+    }
+
     private void transformDtoToEntity(ClientDTO dto, Client entity) {
         entity.setName(dto.getName());
         entity.setBirthDate(dto.getBirthDate());
@@ -61,7 +68,5 @@ public class ClientService {
         entity.setChildren(dto.getChildren());
         entity.setIncome(dto.getIncome());
     }
-
-
 
 }
