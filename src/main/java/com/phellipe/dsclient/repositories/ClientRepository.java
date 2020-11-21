@@ -1,6 +1,6 @@
-package com.phellipe.trabfinalcap.client.repositories;
+package com.phellipe.dsclient.repositories;
 
-import com.phellipe.trabfinalcap.client.entities.Client;
+import com.phellipe.dsclient.entities.Client;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

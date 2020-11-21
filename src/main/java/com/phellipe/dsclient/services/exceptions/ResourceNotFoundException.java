@@ -1,4 +1,4 @@
-package com.phellipe.trabfinalcap.client.services.exceptions;
+package com.phellipe.dsclient.services.exceptions;
 
 public class ResourceNotFoundException extends RuntimeException{
     private static final long serialVersionUID = 5085654092150955870L;

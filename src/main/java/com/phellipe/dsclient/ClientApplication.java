@@ -1,4 +1,4 @@
-package com.phellipe.trabfinalcap.client;
+package com.phellipe.dsclient;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.phellipe.trabfinalcap.client.resourcers.exceptions;
+package com.phellipe.dsclient.resourcers.exceptions;
 
 import java.io.Serializable;
 import java.time.Instant;

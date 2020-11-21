@@ -1,9 +1,9 @@
-package com.phellipe.trabfinalcap.client.services;
+package com.phellipe.dsclient.services;
 
-import com.phellipe.trabfinalcap.client.dto.ClientDTO;
-import com.phellipe.trabfinalcap.client.entities.Client;
-import com.phellipe.trabfinalcap.client.repositories.ClientRepository;
-import com.phellipe.trabfinalcap.client.services.exceptions.ResourceNotFoundException;
+import com.phellipe.dsclient.dto.ClientDTO;
+import com.phellipe.dsclient.entities.Client;
+import com.phellipe.dsclient.repositories.ClientRepository;
+import com.phellipe.dsclient.services.exceptions.ResourceNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.data.domain.Page;

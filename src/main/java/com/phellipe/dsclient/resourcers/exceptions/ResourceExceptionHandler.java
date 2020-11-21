@@ -1,6 +1,6 @@
-package com.phellipe.trabfinalcap.client.resourcers.exceptions;
+package com.phellipe.dsclient.resourcers.exceptions;
 
-import com.phellipe.trabfinalcap.client.services.exceptions.ResourceNotFoundException;
+import com.phellipe.dsclient.services.exceptions.ResourceNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;

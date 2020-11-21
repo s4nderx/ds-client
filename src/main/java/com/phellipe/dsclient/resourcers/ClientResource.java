@@ -1,8 +1,7 @@
-package com.phellipe.trabfinalcap.client.resourcers;
+package com.phellipe.dsclient.resourcers;
 
-import com.phellipe.trabfinalcap.client.dto.ClientDTO;
-import com.phellipe.trabfinalcap.client.entities.Client;
-import com.phellipe.trabfinalcap.client.services.ClientService;
+import com.phellipe.dsclient.dto.ClientDTO;
+import com.phellipe.dsclient.services.ClientService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
