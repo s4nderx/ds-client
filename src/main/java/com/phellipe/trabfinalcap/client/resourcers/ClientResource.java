@@ -21,7 +21,7 @@ public class ClientResource {
     private ClientService service;
 
     @PostMapping
-    public ResponseEntity<ClientDTO> create(ClientDTO dto){
+    public ResponseEntity<ClientDTO> create(@RequestBody ClientDTO dto){
         dto = service.create(dto);
         URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(dto.getId()).toUri();
         return ResponseEntity.created(uri).body(dto);
